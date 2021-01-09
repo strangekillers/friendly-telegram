@@ -32,7 +32,7 @@ async def _(event):
     i.write(D)
     im = Image.open("rmbg.jpg").convert("RGB")
     im.save("test.jpg","jpeg")
-    response = requests.post('https://api.remove.bg/v1.0/removebg',files={'image_file': open("test.jpg","rb")},data={'size': 'auto'},headers={'X-Api-Key': 'muR4nX9VXTCv5CwVmy8zY3q7'},)
+    response = requests.post('https://api.remove.bg/v1.0/removebg',files={'image_file': open("test.jpg","rb")},data={'size': 'auto'},headers={'X-Api-Key': '32XDU35Td8ijD4Cn1WYRECLT'},)
     with open('removedbg.png', 'wb') as out:
     	out.write(response.content)
     	file = "removedbg.png"
