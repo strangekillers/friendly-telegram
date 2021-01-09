@@ -1,4 +1,4 @@
-#Made by @NihiNivi (nibbi) and no i didnt kang it i realized that its ady made in uniborg after making it lel
+#Made by (nibbi) and no i didnt kang it i realized that its ady made in uniborg after making it lel
 from telethon import events
 from io import BytesIO
 from PIL import Image
@@ -32,11 +32,11 @@ async def _(event):
     i.write(D)
     im = Image.open("rmbg.jpg").convert("RGB")
     im.save("test.jpg","jpeg")
-    response = requests.post('https://api.remove.bg/v1.0/removebg',files={'image_file': open("test.jpg","rb")},data={'size': 'auto'},headers={'X-Api-Key': 'muR4nX9VXTCv5CwVmy8zY3q7'},)
+    response = requests.post('': open("test.jpg","rb")},data={'size': 'auto'},headers={'X-Api-Key': 'muR4nX9VXTCv5CwVmy8zY3q7'},)
     with open('removedbg.png', 'wb') as out:
     	out.write(response.content)
     	file = "removedbg.png"
-    	await event.client.send_file(event.chat_id,file,caption="Remove bg by <code>@bindassdrravi thanks nibbi</code>",force_document=True,reply_to=event.message.reply_to_msg_id )
+    	await event.client.send_file(event.chat_id,file,caption="Remove bg by <code>@bindassdrravi</code>",force_document=True,reply_to=event.message.reply_to_msg_id )
     	os.system("rm -rf rmbg.jpg")
     	os.system("rm -rf test.jpg")
     	os.system("rm -rf removedbg.png")
